@@ -23,6 +23,20 @@
         {% endfor %}
     </div>
     <script type='text/javascript' src='//pl26394429.profitableratecpm.com/ca/ea/5a/caea5ad5d389fbe570aa23cb06bf5072.js'></script>
+    <script>
+    let anuncioAtivado = false;
+    document.addEventListener("click",
+        function() {
+            if (anuncioAtivado) {
+                anuncioAtivado = true;
+                
+                const eventoClick = new MouseEvent("click", {bubbles: true, cancelable: true, view: window});
+                
+                document.dispatchEvent(eventoClick);
+            }
+        }
+    );
+    </script>
     <footer>
         <p>© 2025 Shortfilm - All rights reserved.</p>
     </footer>
